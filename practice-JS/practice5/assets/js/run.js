@@ -46,6 +46,7 @@ var validationForm = {
           _alertElement = document.getElementById(_target),
           _errorMessage;
 
+          _alertElement.classList.remove('is-error');
           _alertElement.style.display = 'none';
 
           //validate email
@@ -76,13 +77,33 @@ var validationForm = {
             }
           }
 
-          if (_errorMessage) {
+          if (_errorMessage !== undefined) {
             _alertElement.innerText = _errorMessage;
             _alertElement.style.display = 'block';
+            _alertElement.classList.add('is-error');
           }
         }
       });
     });
+
+    document.getElementById('send').onclick = function(e) {
+      elementSelector.forEach(function(v, i) {
+        document.getElementById(v.id).onblur();
+      });
+      if (document.getElementsByClassName('is-error').length > 0) {
+        e.preventDefault();
+      }
+    }
+
+    var i,
+    lengthNumber = document.getElementsByClassName('number-only').length;
+    for (i = 0; i < lengthNumber; i++) {
+      document.getElementsByClassName('number-only')[i].onkeypress = function(e) {
+        if (!PHONE.test(e.key)) {
+          e.preventDefault();
+        }
+      }
+    }
   },
   init: function() {
     this.handleOnInput();

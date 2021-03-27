@@ -1,0 +1,33 @@
+Jquery Effect
+--
+
+Hide / Show
+ - hide (speed, callback)
+ - show (speed, callback)
+ - toggle (speed, callback)
+Fade
+ - fadeOut (speed, callback)
+ - fadeIn (speed, callback)
+ - fadeToogle (speed, callback)
+
+ - fadeTo (speed. opacity, callback)
+
+Slide
+ - slideUp (speed, callback)
+ - slideDown (speed, callback)
+ - slideToogle (speed, callback)
+
+
+JQuery Animate
+--
+
+selector.animate({params}, speed, callback)
+
+selector.animate({
+	width: '640',
+	opacity: '0.5',
+	font-size: '16px'
+}, 300);
+
+
+Tugas Show hide + carousel
