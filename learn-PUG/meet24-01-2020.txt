@@ -1,0 +1,78 @@
+PUG/Jade
+--
+
+Preparing
+--
+install plugin editor (PUG/JADE)
+
+overview
+--
+syntax
+--
+.box
+  .card
+    .image
+      img(src"path-folder", alt="")/
+    .text
+      h2.title
+      p.desc
+        | lorem weweqweqerwf
+      a.button(href="#" title="title value") Selengkapnya
+        | Selengkapnya
+          .icon
+
+stucture folde
+--
+[] src
+  [] pug
+    [] components
+    [] layouts
+    [] pages
+    [] templates
+  [] scss
+
+PUG Include
+
+1. include no parameter
+  file.pug
+  include filename.pug
+2 Include Parameter
+
+in page
+- title ='Judul'
+- desc ='Deskripsi'
+
+or
+- 
+  title = 'Judul'
+  desc ='Deskripsi'
+
+include banner.pug
+
+//in banner/ components
+//without break
+h2.title = title
+//with break
+h2.title
+  | !{title}
+
+
+PUG Comment
+//- single line comment
+//- 
+  multi line comment
+  multi line comment
+
+HTML Comment Output
+
+// single line comment
+//
+  multi line comment
+  multi line comment
+
+PUG Enter
+| !{''}
+|
+
+
+='\n'

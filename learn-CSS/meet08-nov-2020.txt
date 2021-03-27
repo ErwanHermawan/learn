@@ -1,0 +1,104 @@
+CSS Width/Height
+--
+
+.selector-class{
+  width: unit/auto;
+    /*
+        if width container >= max-width then
+        width=max-width else
+        width= container
+        */
+        max-width: unit | auto;
+    /*
+        if width container >= max-width then
+        width=max-width else
+        width= container
+        */
+        heigth: unit/auto;
+        max-height: unit | auto;
+      }
+
+      CSS Box Sizing
+      --
+
+      .selector{
+        box-sizing: content-box (default) | border-box;
+    /*
+        border-box -> width tetap tanpa ditambah padding,border
+        */
+      }
+
+      CSS Display
+      --
+
+      .selector-class{
+        display: inline | block | inline-block | none;
+        display: inline-block;
+        vertical-align: middle | top | bottom;
+        visibility: visible | hidden | collapse;
+        opacity: 0;
+    /*
+      block -> mengikuti content
+      inline -> mengikuti text, width + height tidah berpengaruh
+      inline-block -> mengikuti text, w+h berpengaruh
+
+      menghilangkan spasi bawaan di inline-block -> parent set font-size:0;
+      
+      visibility -> hide, tidak bisa di select
+      opacity -> hide, bisa di select
+      */
+    }
+
+    CSS Opacity
+    --
+
+    .selector-class{
+      opacity: 0-1;
+      /*IE 8*/
+      filter: alpha(opacity=0-100);
+      /*firefox 0.9*/
+      -moz
+    }
+
+    CSS Text
+    --
+    .selector-class{
+      color: ;
+      text-align: left | right | justify;
+      /*
+        display inline dan inline-block akan terpengauh oleh text align
+      */
+      vertical-align: top | middle | bottom;
+
+      direction: rtl;
+      unicode-bidi: bidi-override;
+
+      text-decoration: none | overline | line-throught | underline;
+      
+      text-transform: uppercase | lowercase | capitalize;
+
+      /*Text spacong*/
+      text-indent: unit;
+      letter-spacing: unit;
+      word-spacing: unit;
+      line-height: unit | scala;
+      white-space: normal | nowrap | pre | pre-line | pre-wrap;
+      text-shadow: x-unit y-unit blur colo-code;
+
+      /*Box Shadow*/
+      text-shadow: x-unit y-unit blur spread colo-code inset;
+    }
+
+    CSS Fonts
+    --
+
+    .selector-class{
+      font-family: serif, sans-serif, cusive, monoscape;
+      font-style: normal | italic | oblique;
+      font-weight: normal | bold | 100-900;
+      font-variant: normal | small-caps;
+      font-size: unit;
+
+      /*short hand*/
+      font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];
+    }

@@ -1,0 +1,40 @@
+CSS 3D Transform
+--
+
+.selector-class{
+  transform: value-of-transform;
+  transform-style: flat | preserve-3d;
+  perspective: none | units;
+  backface-visibility: visible | hidden;
+}
+
+value-of-transform
+--
+
+rotateX(angle);
+rotateY(angle);
+rotateX(angle);
+rotate3D(x, y, z, units);
+translateX(units);
+translateY(units);
+translateX(units);
+translate3D(x, y, z, scale);
+scaleX(scale);
+scaleY(scale);
+scaleX(scale);
+scale3D(x, y, z, scale);
+
+
+
+CSS Text Effects
+--
+
+.selector-class{
+  text-align-last: auto | left | rigth | center | justify | star | end;
+  tex-justify : auto | inter-word;
+  text-overflow: clip | ellipsis;
+  word-break: normal | break-word | break-all | keep-all;
+  word-wrap: normal | break-word;
+  writing-mode: vertical-lr | vertical-rl | horizontal;
+}
+

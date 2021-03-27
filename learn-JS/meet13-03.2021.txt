@@ -1,0 +1,75 @@
+Javascript Regular Expressions (REGEX)
+--
+
+syntax
+--
+/pattern/modifiers
+/pattern/pattern/modifiers
+/nama/ -> case sensitive
+/nama/i -> case insitive
+/nama/g -> semua case sensitive
+/nama/gi -> semua case insitive
+
+https://regexr.com/
+
+whitespace = /^ *$/g;
+
+modifiers
+--
+i => case insitive;
+g => global (semua);
+m => multiline matching;
+
+regex.text(input) -> cek true or false;
+
+var inpulVal = '';
+var inputPola = 'india';
+new RegExp(inputPola, 'gi').test(inpulVal);
+
+Form
+nama -> required;
+email -> required + email valid
+password -> required +  >= 8
+no_telp -> required + oninput harus angka yang bisa diketik
+
+
+Javascript Scope
+--
+
+var kelas = 'Bahasa'; //global variable (global scope)
+
+function setJumlah(){
+  var nama = 'Rendi'; //local variable (local scope)
+  console.log(nama);
+  console.log(kelas);
+  kelas = 'PKN';
+}
+
+setJumlah();
+
+console.log(nama);
+console.log(kelas);
+
+
+
+Javascript Hoisting
+--
+
+var x;
+x = 9;
+
+Javascript Strict mode
+--
+
+//keyword simpan
+"use strict";
+
+
+Javascript this keyword
+--
+
+this: variable object -> mengacu pada pemilik object terdekat
+this: inline -> mengacu pada dirinya sendiri
+this: even -> mengacu pada pemilik function
+this: variable function ES5 / function -> mengacu pada windows (not use strict)
+this: class -> mengacu pada className

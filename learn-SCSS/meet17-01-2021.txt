@@ -1,0 +1,73 @@
+SCSS Nesting
+--
+
+parrent-class{
+  .child-class{
+  //& penggabungan dg pseudo class
+    & class-name{
+
+    }
+  }
+}
+
+
+
+SCSS Modules
+--
+
+create file-name
+
+use-file
+--
+
+$use 'file-name';
+
+examples
+--
+
+file-name.variables
+
+
+SCSS Mixin
+--
+
+- no parameter
+
+//create mixin
+@mixin mixin-name{
+  property: $parameter;
+}
+
+//use mixin
+selector-class{
+  @include mixin-name
+}
+
+- Parameter
+- no-default
+@mixin transition{
+  transition: $value;
+  -webkit-transition: $value;
+}
+ 
+@include mixin-name(parameter1, $parameter);
+
+- default
+@mixin transition(value){
+  property: $parameter1;
+  property: $parameter2;
+  selector{
+    property: value;
+    property: value;
+  }
+}
+ 
+@include mixin-name(value-parameter1, value-parameter3);
+
+
+Mixin content
+--
+
+
+
+

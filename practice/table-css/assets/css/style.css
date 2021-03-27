@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  color: #484848;
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.report-table{
+  border-collapse: collapse;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.report-table th{
+  vertical-align: top;
+  padding: 20px 20px 8px;
+}
+
+.report-table small{
+  color: #aeada6;
+  font-weight: normal;
+}
+
+.report-table td{
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.report-table td:nth-child(1){
+  font-weight: bold;
+}
+
+.report-table th{
+  background-color: #eae9dc;
+}
+
+.report-table tbody tr:hover {
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 10px #ddd;
+  -webkit-box-shadow: 0px 0px 10px #ddd;
+  -moz-box-shadow: 0px 0px 10px #ddd;
+  -o-box-shadow: 0px 0px 10px #ddd;
+  -ms-box-shadow: 0px 0px 10px #ddd;
+}
+
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #eeeee7;
+  color: #c1c1bc;
+  text-align: center;
+  line-height: 32px;
+}
+
+.icon .fa{
+  font-size: 18px;
+  line-height: 1;
+}
+
+

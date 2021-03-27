@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="form-validation">
+    <div class="container">
+      <div class="card">
+        <h2>Form Validation</h2>
+        <form action="process.php" autocomplete="off">
+          <div class="form-input">
+            <input type="text" class="input-text" id="name" name="name" placeholder="Name" data-target="alertName">
+            <p class="msg" id="alertName" data-req="Nama harus diisi!"></p>
+          </div>
+          <div class="form-input">
+            <input type="text" class="input-text" id="email" name="email" placeholder="Email" data-target="alertEmail">
+            <p class="msg" id="alertEmail" data-req="Email harus diisi!" data-invalid-email="Email harus benar!"></p>
+          </div>
+          <div class="form-input">
+            <input type="password" class="input-text" id="password" name="password" placeholder="Password" data-target="alertPassword">
+            <p class="msg" id="alertPassword" data-req="Password harus diisi!" data-min="Password minimal 8 karakter!"></p>
+          </div>
+          <div class="form-input">
+            <input type="text" class="input-text" id="phone" name="phone" placeholder="No Telp" data-target="alertPhone">
+            <p class="msg" id="alertPhone" data-req="No Telphone harus diisi!" data-invalid-phone="Yang anda masukan bukan number!"></p>
+          </div>
+          <div class="form-input">
+            <input class="button" type="submit" id="send" value="Kirim">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/run.js"></script>
+</body>
+</html>

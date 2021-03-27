@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  color: #1b0a42;
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+
+.header .container:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.header-left{
+  float: left;
+  padding: 18px 0;
+  font-size: 0;
+}
+
+.logo{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  margin-right: 115px;
+}
+
+.menu{
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item{
+  display: inline-block;
+  margin-right: 38px;
+}
+
+.menu-item:last-child{
+  margin-right: 0;
+}
+
+.menu-item a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #1b0a42;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+}
+
+.menu-item a:hover{
+  color: #4f56f1;
+}
+
+.active a{
+  color: #4f56f1;
+}
+
+.header-right{
+  float: right;
+}
+
+.banner{
+  padding: 185px 0 130px;
+}
+
+.banner .container{
+  font-size: 0;
+}
+
+.banner-text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+  padding-right: 50px;
+}
+
+.banner-title{
+  font-size: 72px;
+  line-height: 76px;
+  font-family: Ramaraja, sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.banner-desc{
+  font-size: 20px;
+  line-height: 32px;
+  color: #9a9a9a;
+  margin: 0 0 50px;
+}
+
+.banner-image{
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+}
+
+.banner-image img{
+  display: block;
+}
+
+.button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 32px; 
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn-sign-in{
+  color: #1b0a42;
+  background-color: transparent;
+}
+
+.btn-biru{
+  background-color: #4f56f1;
+}
+
+.btn-ungu{
+  background-color: #824ff1;
+}
+
+.btn-hijau{
+  background-color: #a3dc00;
+}
+
+.btn-pink{
+  background-color: #fc569a;
+}
+
+.btn-biru-muda{
+  background-color: #33a2e0;
+}

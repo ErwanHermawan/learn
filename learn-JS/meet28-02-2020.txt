@@ -1,0 +1,74 @@
+Javascript Switch Statement
+--
+
+switch(input.value.toLowerCase){
+  var kecamatan = '';
+  case 'cikupa':
+  case 'cipasung': //or
+    kecamatan = 'Darma';
+    break;
+  case 'cidulang':
+    kecamatan = 'Cikijing';
+    break;
+  default
+    kecamatan = 'Kecamatan tidak ada';
+    break;
+}
+
+Javascript loop for
+--
+
+for (statement 1; statement 2; statement 3){
+  // your code
+}
+
+for (var i=1; nomor.length; i++){
+
+}
+
+Javascript Loop While
+--
+
+while(condition){
+  // your code
+}
+
+or
+
+do {
+
+}
+while (condition);
+
+
+// example
+var i = 0;
+
+while(i < 10){
+  i++;
+}
+
+var i = 1;
+do{
+  i++;
+}
+while(i < 10)
+
+
+
+Javascript Break and Continue
+--
+
+let i = 1;
+while(i < 10){
+  console.log(1);
+  break;
+  i++;
+}
+
+let i = 1;
+while(i < 10){
+  console.log(1);
+  continue;
+  i++;
+}

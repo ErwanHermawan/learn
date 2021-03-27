@@ -1,0 +1,67 @@
+CSS Font
+--
+
+Jenis Huruf (font)
+1. Cloud
+-
+2. Local Projetc
+- Download
+- Embed
+@font-face{
+  font-family: font-name;
+  src: url();
+  font-style: normal | italic;
+  font-weight: ;
+}  
+
+- transfonter.org
+
+
+CSS Links
+--
+
+selector{
+  /*useragen sstylesheet*/
+  text-decoration: underline;
+  color: -webkit-link;
+  cursor: pointer;
+}
+
+:link -> a unvisited link
+:visited -> a visited link
+:hover -> 
+:active ->
+
+
+CSS List
+--
+
+selector{
+  /*useragen stylesheet*/
+  margin: units;
+  padding: units;
+
+  /*ul*/
+  list-style-type: disc | circlr | square | none;
+  /*ol*/
+  list-style-type: decimal | decimal-leading-zero | lower-alpha | upper-alpha | lower-roman | upper-roman | none;
+  list-style-position: outside;
+  list-style-image: url();
+
+  /*sorthand*/
+  list-style: [list-style-type] [list-style-position] [list-style-image]
+}
+
+CSS Tables
+--
+
+selector{
+  border-collapse: separate | collapse;
+  border-spacing: units;
+  caption-side: top | bottom;
+  empty-cells: show | hide;
+  table-layout: auto | fixed;
+}
+
+
+

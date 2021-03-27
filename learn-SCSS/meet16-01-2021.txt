@@ -1,0 +1,30 @@
+
+
+Create file project
+
+-
+
+
+SCSS Variable
+--
+
+$variable-name : #fff;
+
+SCSS Partials
+--
+
+create file name
+--
+_file-name.scss
+
+
+example
+--
+_header.scss
+_banner.scss
+_footer.scss
+
+join file
+--
+@import "file-name";
+$import "folder-name/file-name"

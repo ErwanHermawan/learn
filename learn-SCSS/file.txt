@@ -1,0 +1,21 @@
+Langkah2 buat task runner
+--
+1. NPM -> node JS
+2. Create gulpfile.js (config by alphaX)
+3. Install di cmd "npm install -g gulp gulp-sass gulp-notify gulp-error-handle browser-sync gulp-pug gulp-html-beautify"
+4. Masuk project dg cmd lalu ketik "npm link gulp gulp-sass gulp-notify gulp-error-handle browser-sync gulp-pug gulp-html-beautify"
+5. lalu ketik gulp
+
+
+Install gulpfile.js by system
+- in file directory 
+
+windows
+- npm install -g gulp gulp-sass gulp-notify gulp-error-handle
+
+ubuntu
+- npm install -g gulp gulp-notify gulp-error-handle
+- npm install -g gulp gulp-sass --unsafe-perm
+
+connect project to system
+- npm link gulp gulp-sass gulp-notify gulp-error-handle browser-sync gulp-pug gulp-html-beautify

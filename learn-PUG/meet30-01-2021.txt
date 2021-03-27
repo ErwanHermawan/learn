@@ -1,0 +1,66 @@
+Pug Extend
+--
+
+extend without parameter
+
+create file yang akan di extends
+block blockName1
+block blockName2
+
+using file
+--
+extends file-name.pug
+
+block blockName2
+  pug code
+
+block blockName1
+  pug code
+
+
+extends with parameter
+--
+
+create file yang akan di extends
+block blockName1
+block blockName2
+
+using file
+--
+
+block blockName2
+  pug code
+
+block blockName1
+  pug code
+
+extends file-name.pug
+
+//-value attribute
+
+attribute-name=variableName
+
+
+
+
+CSS Architexture
+--
+
+BEM*
+OOCSS
+SMACSS
+
+
+Javascript
+--
+Into
+Where to
+Output
+Statement
+Syntax
+Comments
+Variables
+Operators
+Aritmhetic
+Assigment
+Data Types

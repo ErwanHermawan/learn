@@ -1,0 +1,56 @@
+Javascript Clasess
+--
+//nama class menggunakan pascal case
+class className {
+  constructor() {
+
+  }
+
+  method1() {
+
+  }
+
+  method2() {
+
+  }
+}
+
+class Person {
+  constructor(firstName, lastName) {
+    console.log(firstName + ' ' + lastName);
+    this.namaDepan = firstName;
+    this.namaBelakang = lastName
+  }
+
+  fullName() {
+    return this.namaDepan + ' ' + this.namaBelakang;
+  }
+}
+
+var namaLengkap = new Person('John', 'Doe');
+console.log(namaLengkap.fullName());
+
+class Rumah extends Person{
+  getLastName() {
+    return this.namaBelakang;
+  }
+}
+
+var namaPemilik = new Rumah('', '');
+console.log(namaPemilik.getLastName());
+
+Attribute class
+--
+
+- constructor: method yg pertama kali dijalankan
+- property: data yang disimpak ke dalam object
+- class method: method/function yang dimiliki sebuah object
+- static method
+- getter & setter
+- inheritece: memiliki constructor dan method yang sama terhadap parent class
+
+Javascript Style Guide
+--
+
+Javascript Best Practice
+--

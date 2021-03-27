@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noren</title>
+
+  <link rel="stylesheet" href="assets/css/normalize.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="section-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="assets/images/logo/noren.svg" alt="Logo Noren"/></a>
+      </div>
+      <ul class="menu">
+        <li><a class="menu-list" href="#">Home</a></li>
+        <li><a class="menu-list" href="#">Service</a></li>
+        <li><a class="menu-list" href="#">Team</a></li>
+        <li><a class="menu-list" href="#">Blog</a></li>
+        <li><a class="menu-list" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="container">
+      <div class="banner-text">
+        <h1 class="banner-title">Get business solution with Noren.</h1>
+        <p class="banner-desc">Power your business to new heights with our award-winning digital marketing services and technology platform.</p>
+        <a href="#" class="button">Get Started</a>
+      </div>
+      <div class="banner-image">
+        <img src="assets/images/banner.png" alt="Banner"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="brands">
+    <div class="container">
+      <ul class="brand-list">
+        <li class="brand-item">
+          <img src="assets/images/brands/nike-icon.png" alt="Logo Nike"/>
+        </li>
+        <li class="brand-item">
+          <img src="assets/images/brands/google-icon.png" alt="Logo Google"/>
+        </li>
+        <li class="brand-item">
+          <img src="assets/images/brands/coca-cola-icon.png" alt="Logo Coca-cola"/>
+        </li>
+        <li class="brand-item">
+          <img src="assets/images/brands/pepsi-icon.png" alt="Logo Pepsi"/>
+        </li>
+        <li class="brand-item">
+          <img src="assets/images/brands/microsoft-icon.png" alt="Logo Microsoft"/>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <div class="card">
+        <div class="card-image">
+          <img src="assets/images/features/trafic.png" alt="Trafic"/>
+        </div>
+        <div class="card-text">
+          <h3 class="card-tittle">Grow your trafic</h3>
+          <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="assets/images/features/chart.png" alt="Trafic"/>
+        </div>
+        <div class="card-text">
+          <h3 class="card-tittle">Get quality leads</h3>
+          <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="assets/images/features/bag.png" alt="Trafic"/>
+        </div>
+        <div class="card-text">
+          <h3 class="card-tittle">Drive more sales</h3>
+          <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="business">
+    <div class="container">
+      <div class="business-image">
+        <img src="assets/images/Illustrationilusi-icon.png" alt="Business Illustration"/>
+      </div>
+      <div class="business-text">
+        <h2 class="business-title">We take care of your business</h2>
+        <p class="business-desc">Power your business to new heights with our award-winning digital marketing services and technology platform.</p>
+        <ol class="business-list">
+          <li class="list-item">
+            Power your business to new heights with our award-winning
+          </li>
+          <li class="list-item">
+            Our award-winning digital marketing services and technology platform.
+          </li>
+          <li class="list-item">
+            Business to new heights with our award-winning digital marketing.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-number">
+    <div class="container">
+      <div class="our-number-text">
+        <h2 class="our-number-title">Our Number</h2>
+        <p class="our-number-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="#" class="button btn-secondary">Let's Talk</a>
+      </div>
+      <div class="our-number-image">
+        <img src="assets/images/statisticstatistic-icon.png" alt="Image Statistic">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="#"><img src="assets/images/logo/noren-black.svg" alt="Logo Noren"></a>
+      </div>
+      <div class="footer-text">
+        <p class="text-description"> 2020 &copy; Ghassan Hani</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+  <script>
+    $(function(){
+      var navbar = $('.section-header');
+
+      $(window).scroll(function(){
+        if($(window).scrollTop() <= 60){
+          navbar.removeClass('section-header-scroll');
+        } else {
+          navbar.addClass('section-header-scroll');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

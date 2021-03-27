@@ -1,0 +1,100 @@
+Array Iteration
+
+Array.forEach(); //mengeluarkan data sebanyak data
+
+  siswa.forEach(function(value, idx, array){
+    console.log(siswa);
+  });
+
+  var siswa = [];
+  var content = '';
+  function keluarData(val, idx, data){
+    content += '<li>'+value+'</li>';
+  }
+
+  siswa.forEach(keluarData);
+
+  document.getElementById('list').innerHTML = content;
+
+
+Array.map(); // mengeluarkan  membuat array baru
+
+  x.map(function(value, idx, array){
+    return value * 3;
+  });
+
+Array.filter(); //memfilter value berdasarkan kondisi yang di tentukan
+
+  var keyword = 's';
+  x.filter(function(value, idx, array){
+    return value > 10;
+    var nama = val.nama.toLowerCase();
+    nama.indexOf(keyword.toLowerCase()) > -1;
+  });
+
+
+
+Javascript Date
+--
+
+new Date(); //current date
+new Date(year, month, hours, minutes, second, millisecond);
+new Date(millisecond);
+new Date(date string);
+  new Date("September 3, 1990 11:00:00");
+
+JS Date Get Method
+--
+date.getFullYear();
+date.getMonth(); //start from 0 -11
+date.getDate();
+date.getHours();
+date.getMinutes();
+date.getMilliSecond();
+date.getSecond();
+date.getTime();
+date.getDay();
+date.Now();
+
+JS Date Format
+--
+ISO Date  "2015-03-25" (The International Standard)
+Short Date  "03/25/2015" / "MM/DD/YYYY"
+Long Date "Mar 25 2015" or "25 Mar 2015"
+
+
+JS Date set Method
+--
+date.setFullYear(n);
+date.setMonth(n); //start from 1 -12
+date.setDate(n);
+date.setHours(n);
+date.setMinutes(n);
+date.setMilliSecond(n);
+date.setSecond(n);
+date.setTime(n);
+date.setDay(n);
+date.Now(n);
+date.Now(n);
+
+
+Javascript Condition
+--
+
+if(kondisi) {
+  // your code
+} else {
+  // your code
+}
+
+if(kondisi) {
+  // your code
+} else if (kondisi){
+  // your code
+} else if (kondisi){
+  // your code
+} else if (kondisi){
+  // your code
+} else {
+  // your code
+}

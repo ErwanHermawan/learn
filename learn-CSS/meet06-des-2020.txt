@@ -1,0 +1,41 @@
+CSS Overflow
+--
+
+selector{
+	overflow: visible | hidden | scroll | auto;
+}
+
+CSS Pseudo-class
+--
+
+selector:pseudo-class{
+	property: value;
+}
+
+:hover -> 
+:active ->
+:link -> a unvisited link
+:visited -> a visited link
+:checked (input type checkbox | radio)
+:disable (form input, select, textarea)
+:focus (form input textbox)
+:read-only (form input, select, textarea)
+:requird (form input, select, textarea)
+:valid (form input, select, textarea)
+:target (link has target attribute)
+:not (selector)
+:first-child;
+:last-child;
+:nth-child(number | n)
+:nth-last-child(n | number)
+
+CSS Pseudo-element
+--
+
+::pseudo-element
+-
+::after
+::before
+::first-letter
+::first-line
+::selection

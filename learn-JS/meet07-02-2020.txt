@@ -1,0 +1,87 @@
+JavaScript Data Types
+----------------------
+
+a. String
+  var lastName = 'Johnson';
+b. Number
+  var length = 16; 
+  var length = 16.55; 
+  var harga = 1e5;
+c. Boleans
+  true
+  false
+d. Arrays
+  var namaSiswa = [
+    "Ade",
+    "Adi",
+    "ada"
+  ];
+
+  //Print
+  namaSiswa[index] => index 0;
+
+  var namaKota = [
+    "Ade"[10,20,30],
+    "Adi",
+    "ada"
+  ];
+
+  namaSiswa[index][indexArray]
+d. Object {key : value}
+  var x = {
+    firstName:"John",
+    lastName:"Doe"
+   };
+
+  var rumah = {
+    luas: 120,
+    lantai: 4,
+    warna: 'Abu',
+    lokasi: 'Kuningan'
+  };
+
+  //Print
+  //Text
+  rumah.key(luas/lantai,warna,lokasi);
+  rumah.["key"](luas/lantai,warna,lokasi);
+  //or
+  //Number
+  rumah[key];
+
+e. Undefined
+  var x;
+  var x = undefined;
+
+f. Empty value
+  var x = ''; => typeoff string
+
+g. Null
+  var x = 'nama';
+  x = null; => typeoff object
+
+h. function
+  result typeoff function
+
+
+
+JavaScript function
+--
+
+//void function
+
+function functionName(){
+  console.log();
+}
+
+functionName();
+
+//parameter function
+
+function functionName(parameter1, parameter2, ...){
+
+}
+
+functionName(valueParameter1, valueParameter2);
+
+
+

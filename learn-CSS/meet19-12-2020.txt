@@ -1,0 +1,24 @@
+CSS Units
+--
+
+Absolute Lenghts(fixed)
+--
+cm =>
+mm =>
+in =>
+px =>
+pt =>
+pc =>
+
+Relative Lengths
+--
+
+em => relative terhadap font-size dirinya else font-size parrent terdekat
+rem => relative terhadap font-size html(root)
+% => relative parrent (tergantung property)
+vh => height viewport
+vw => width viewport
+vmin =>
+vmax =>
+ch =>
+ex =>

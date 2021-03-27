@@ -1,0 +1,91 @@
+Javascript Boolean
+--
+
+var x = 1;
+if(x) {
+  console.log('benar');
+} else {
+  console.log('salah');
+}
+
+Boolean(value);
+
+//object
+new Boolean(value); //default class object javascript
+var y = new Boolean(1);
+
+// Selain dari 0 return false
+
+Javascript Comparison
+--
+
+10 == 9 //false
+10 === 9 //false
+10 != 9 //true
+10 !== 9 //true
+10 > 9 //true
+10 >= 9 //true
+10 < 9 //false
+10 <= 9 //false
+
+
+Javascript Condisional
+--
+if{
+  // your code
+} else {
+  // your code
+}
+
+//Ternari ?
+var = (nilai >= 80 ? 'Lulus' : 'Tidak Lulus');
+
+  if(kondisi) {
+  // your code
+} else if (kondisi){
+  // your code
+} else if (kondisi){
+  // your code
+} else if (kondisi){
+  // your code
+} else {
+  // your code
+}
+
+var button = document.getElementById('button');
+  var nilai = document.getElementById('nilai');
+    var hasil = document.getElementById('hasil');
+
+      button.onclick = function(){
+        var text = '';
+        if(kondisi) {
+
+    } else {
+
+    }
+    nilai.innerText;
+  }
+
+
+
+  function addClass(el, className){
+    el.classList.add(className);
+  }
+
+  function removeClass(el, className){
+    el.classList.remove(className);
+  }
+
+  function toogleClass(el, className){
+    if (show){
+    show = false;
+    removeClass(el, className);
+  } else{
+    show = true;
+    addClass(el, className);
+  }
+}
+
+.toogleButon.onclick = function(){
+  toogleClass(body, 'show-menu');
+}

@@ -1,0 +1,108 @@
+JS Number
+--
+
+e: exponent
+var a = 3e5;
+
+int ip to 15 digit
+dec ip to 17 digit
+
+NaN (not a number)
+
+//cek non number
+isNaN(value);
+
+infinity
+--
+
+var x = 3/0;
+
+JS Number method
+
+var.toString();
+var.toExponential(number);
+var.toFixed(number); //pembulatan ke atas
+var.toPrecision(number); //mengambil number di awal
+number(val); //konversi dari string ke number
+parseFloat(val); //konversi dari string ke number
+parseInt(val); //konversi dari string ke bilangan bulat
+
+
+Javascript Array
+--
+
+var variableName = ['name1', 'name2'];
+var variableName = new array();
+
+//call
+//variableName.key
+//variableName[key]
+
+//access first array
+array[0];
+
+//access last array
+array[array.length-1];
+
+array.length;
+array.toString(); //konversi ke string
+array.join();
+array.join(sparator);
+
+array.pop(); //menghapus data terakhir
+array.push(); //menambahkan data di akhir
+array.shift(); //menghapus data di awal
+array.unshift(); //menambahkan data di awal
+
+
+array[index] = newValue;
+array[array.length] = newValue;
+delete array[index]; //menghapus value beserta index
+
+
+//array concat
+var sekolah = kelas.concat(kelas1, kelas2);
+
+//array slice
+array.slice(star-index);
+array.slice(star-index, end-index);
+
+
+Array Sort
+--
+
+//string
+Array.short(); //shorting a-z
+Array.reverse(); //shorting z-a
+
+//numeric shorting min - max
+Array.short(function(a,b){
+  return a - b
+});
+
+//numeric shorting max - min
+array.short(function(a,b){
+  return b - a
+});
+
+
+
+Array Iteration
+
+Array.forEach(); //mengeluarkan data sebanyak data
+
+  siswa.forEach(function(value, idx, array){
+    console.log(siswa);
+  });
+
+  var siswa = [];
+  var content = '';
+  function keluarData(val, idx, data){
+    content += '<li>'+value+'</li>';
+  }
+
+  siswa.forEach(keluarData);
+
+  document.getElementById('list').innerHTML = content;
+Array.map(); // membuat array baru
+Array.filter(); //memfilter value berdasarkan kondisi yang di tentukan

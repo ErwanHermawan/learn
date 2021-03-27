@@ -1,0 +1,62 @@
+*{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: #eee;
+	color: #fff;
+	font-size: 0;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.card{
+	display: inline-block;
+	width: 320px;
+	margin: 80px 20px 0 0;
+}
+
+.card:last-child{
+	margin-right: 0;
+}
+
+.card-body{
+	padding: 28px 20px;
+	background-color: #e5e5e5;
+}
+
+.text-time{
+	font-size: 12px;
+	margin: 0;
+}
+
+.text-title{
+	font-size: 22px;
+	margin: 16px 0 24px;
+}
+
+.text-description{
+	font-size: 16px;
+	margin: 0;
+}
+
+.ungu{
+	background-color: #b40092;
+}
+
+.biru{
+	background-color: #1a2cac;
+}
+
+.hijau{
+	background-color: #20286C;
+}
+

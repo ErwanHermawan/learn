@@ -1,0 +1,61 @@
+Javascript Preformance
+--
+
+
+[] Reduce Activity
+	var siswa = ['a', 'b', 'c'];
+	for (var i - 0 ; 1 < siswa.length; i++) {
+		console.log([1]);
+	}
+
+	var i;
+	for (i = 0 ; i < siswa; i++) {
+		console.log([1]);
+	}
+[] Reduce DOM(Document Model Object) access
+	document.getElementById('hitung').onclick = function()
+	document.getElementById('hitung').onblur = function()
+	document.getElementById('hasil').innerText = 'Text'
+
+	var hasil = document.getElementById('hasil'),
+	hitung = document.getElementById('hitung');
+
+	hasil.onclick = function()
+	hasil.onblur = function()
+	hitung.innerText = 'Text'
+[] Avoid Unnecessary Variable
+	var firstName = 'John',
+	lastName = 'Doe';
+
+	var fullName = firstName + ' ' lastName;
+	document.getElementById('demo').innetText = fullName
+
+
+	document.getElementById('demo').innetText = firstName + ' ' +lastName;
+
+[] Delay Javascript Loading
+	tambahkan attr defer="true" pada tag script
+
+	<script type="script">
+		windows.onload = function() {
+			var element = document.createElement('script');
+			element.src = 'assets/js/run.js';
+			document.body.appendChild(element);
+		}
+	<script>
+[] Avoid Using With (hindari kata with)
+
+
+JS For In
+--
+var variable;
+for (variable in object) {
+	//your code
+}
+
+JS For Of -> Modern Browser
+--
+for (variable of iterable(array)) {
+	//your code
+}
+

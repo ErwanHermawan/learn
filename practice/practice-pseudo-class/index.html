@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <div class="login">
+    <div class="container">
+      <div class="login-text">
+        <h1 class="login-title">Enough Searching? Start Matching!</h1>
+        <p class="login-desc">Bizmetch is a business network with an integrated marketplace. Our system used matchmaking algorithms that allow you easily connected with credible business partners from all around the world. Get your new business partners, get a lot of sales leads, easily send buying requests, and get quality products.</p>
+      </div>
+
+      <div class="login-form">
+        <form action="login.php" method="post">
+          <h3 class="form-title">Login</h3>
+          <div class="wrapper">
+            <div class="input-row">
+              <div class="form-group">
+                <input type="text" class="input-text" placeholder="Input Email or Phone Number" required="required"/>
+                <label class="input-label">BizMet ID</label>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="form-group">
+                <input type="password" class="input-text" placeholder="Input Minimal 6 Characters" required="required"/>
+                <label class="input-label">Password</label>
+              </div>
+            </div>
+            <div class="input-row">
+              <button class="button btn-login">Log In</button>
+            </div>
+            <div class="input-row">
+              <a href="#" class="button-forgot">Forgot Password</a>
+            </div>
+            <div class="input-row create">
+              <button class="button btn-create">Create New Account</button>
+            </div>
+            <div class="quick-signin">
+              <div class="quick-signin-title">
+                <h6>Quick Sign In With</h6>
+              </div>
+              <div class="quick-signin-list">
+                <a href="#" class="quick-signin-item linkedin"></a>
+                <a href="#" class="quick-signin-item google"></a>
+                <a href="#" class="quick-signin-item facebook"></a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End  Login-->
+
+  <!-- Ask Seller -->
+  <div class="ask-seller">
+    <div class="container">
+      <div class="ask-seller-head">
+        <h3 class="ask-seller-title">
+          By joining as a Seller, what is your target?
+        </h3>
+      </div>
+
+      <div class="ask-seller-form">
+        <form action="askseller.php">
+          <div class="ask-seller-row">
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="1" />
+              <label>Get Sales Lead</label>
+            </div>
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="2" />
+              <label>Get Business Patner</label>
+            </div>
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="3" />
+              <label>Promote Product</label>
+            </div>
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="4" />
+              <label>Find Seller</label>
+            </div>
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="5" />
+              <label>Sell Franchise</label>
+            </div>
+            <div class="ask-seller-label">
+              <input type="radio" name="target" value="6" />
+              <label>Export Product</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Ask Seller -->
+
+  <!-- Ask Seller Category -->
+  <div class="ask-seller-category">
+    <div class="container">
+      <div class="ask-seller-head">
+        <h3 class="ask-seller-title">
+          Select a minimum of 3 product category <br/>
+          that matches your Business Demands
+        </h3>
+      </div>
+
+      <div class="ask-seller-form">
+        <form action="askseller.php">
+          <div class="wrapper-category">
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="1"/>
+              <div class="image-item">
+                <img src="assets/images/items/agrobisnis-produk-pangan.jpg" alt="Agrobisnis Produk Pangan">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Agrobisnis Produk Pangan</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="2"/>
+              <div class="image-item">
+                <img src="assets/images/items/otomotif-transportasi.jpg" alt="Otomotif Transportasi">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Otomotif Transportasi</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="3"/>
+              <div class="image-item">
+                <img src="assets/images/items/kesehatan-medis-kecantikan.jpg" alt="Kesehatan, Medis & Kecantikan">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Kesehatan, Medis & Kecantikan</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="4"/>
+              <div class="image-item">
+                <img src="assets/images/items/bangunan-mesin-industri.jpg" alt="Bangunan, Mesin & Industri">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Bangunan, Mesin & Industri</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="5"/>
+              <div class="image-item">
+                <img src="assets/images/items/it-elektronik-telekomunikasi.jpg" alt="IT, Elektronik & Komunikasi">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">IT, Elektronik & Komunikasi</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="6"/>
+              <div class="image-item">
+                <img src="assets/images/items/olahraga-mainan.jpg" alt="Olahraga & Mainan">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Olahraga & Mainan</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="7"/>
+              <div class="image-item">
+                <img src="assets/images/items/horeca-property-interior.jpg" alt="Horeca, Property & Interior">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Horeca, Property & Interior</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="8"/>
+              <div class="image-item">
+                <img src="assets/images/items/peralatan-kantor-furniture-rumah-tangga.jpg" alt="Peralatan Kantor, Furniture & Rumah Tangga">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Peralatan Kantor, Furniture & Rumah Tangga</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="9"/>
+              <div class="image-item">
+                <img src="assets/images/items/buku-media-musik-kerajinan.jpg" alt="Buku, Media, musik & Kerajinan">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Buku, Media, musik & Kerajinan</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="10"/>
+              <div class="image-item">
+                <img src="assets/images/items/pakaian-textile-aksesoris.jpg" alt="Pakaian, Textile & Kerajinan">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Pakaian, Textile & Kerajinan</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="11"/>
+              <div class="image-item">
+                <img src="assets/images/items/metalurgi-kimia-karet-plastik.jpg" alt="Metalurgi, Kimia, Karet & Plastik">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Metalurgi, Kimia, Karet & Plastik</h6>
+              </div>
+            </div>
+            <div class="input-category-item">
+              <input type="checkbox" name="category" value="12"/>
+              <div class="image-item">
+                <img src="assets/images/items/jasa.jpg" alt="Jasa">
+                <div class="gradient-bg"></div>
+                <h6 class="text-item">Jasa</h6>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

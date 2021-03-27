@@ -1,0 +1,43 @@
+CSS Icons
+--
+
+1. Font Awesome
+2. Google Icons
+3. Bootsrap Icon
+cdnjs.com
+
+CSS Display
+--
+
+selector{
+  display: block | inline | inline-blok | none;
+  visibility: visible | hidden;
+  opacity: units;
+
+}
+
+display -> none, element hilang
+visibility -> hide, tidak bisa di select
+opacity -> 0, bisa di select
+opacity -> prefix ie 8, safari 1
+-ms-filter
+
+CSS Position
+--
+
+selector{
+  position: static | absolute | fixed | relative | stycky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+relative : jarak terhadap dirinya sendiri;
+absolute : jarak terhadap parrent yg relative / absolute;
+fixed : mengacu ke windows, transform;
+
+
+
+

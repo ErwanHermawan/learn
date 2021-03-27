@@ -1,0 +1,73 @@
+CSS Forms
+--
+
+selector-input-text-box,
+button,
+selector-input-selec{
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+}
+
+selector-textarea{
+  resize: none;
+}
+
+CSS User Interface
+--
+
+selector{
+  outline-offset: units;
+  resize: none | both | horizontal | vertical;
+  /*depedency ovelflow: auto*/
+}
+
+/*=================*/
+
+/*==================*/
+
+CSS Specificity
+--
+
+!important
+
+Inline style
+ID
+Classes, attributes and pseudo-class
+Elements, and pseudo elements
+universal(*)
+
+
+CSS Object Fit(image, video)
+--
+
+selector{
+  object-fit: cover | contain | fill | scale-down | none;
+  object-position: x y(center center);
+}
+
+CSS Transform
+--
+
+2D
+---
+selector{
+  transform: translate() | translate(x,y) | translateX() | translateY();
+  rotate(deg)
+  scaleX()
+  scaleX()
+  scale(x,y)
+  skewX(angle)
+  skewY()
+  skew(x,y)
+  matrix()
+  x = bawah
+  -x =
+
+  transform-origin: x y;
+}
+
+3D
+--
+
+

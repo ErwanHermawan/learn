@@ -1,0 +1,148 @@
+Getter (mendapatkan suatu nilai html)
+--
+
+// innerText
+var x = document.getElementById('value-id').innerText;
+// innerHTML
+var x = document.getElementById('value-id').innerHTML;
+// value
+var x = document.getElementById('value-id').value;
+// attribute
+var x = document.getElementById('value-id').getAttribute('class');
+
+document.getElementById('button').onclick = function(){
+  var x = number(document.getElementById('value-id').value) + 1;
+  document.getElementById('value-id').value = x;
+}
+
+Setter (memberi nilai ke HTMl)
+--
+
+// innerText
+document.getElementById('value-id').innerText = "string";
+// innerHTML
+document.getElementById('value-id').innerHTML = "string";
+// value
+document.getElementById('value-id').value = value;
+// attribute
+document.getElementById('value-id').setAttribute('class', 'red');
+
+
+JS string
+--
+
+var text = "it's alright";
+var text = 'it\'s alright';
+
+code
+-----
+
+\"     "
+\'     '
+\\     \
+\b     backspace
+\n     enter
+\"     "
+
+
+Join string
+/
+//or
++
+
+var content = "<li>" +
+                "<a href='"+link+"'>" +
+
+              "</li>";
+
+JS String Method
+--
+
+1. count character length
+var fullName = nama.length;
+
+2. finding string
+-indexOf
+-lastIndexOf
+-search
+
+result
+-1 (not found)
+> -1 (found)
+
+
+3. Replacing string content
+  name.replace("string", "s");
+
+
+4. convert to Upper / Lower Case
+
+toUpperCase();
+toLowerCase();
+
+5. Concat
+var fullName = fisrname + ' ' + Lastname
+
+6. Trim
+var firstName = "   Tes     "
+firstName.trim();
+
+
+7. charAt
+var name = 'setiawan';
+  name.charAt(4);
+  name.charAt(position);
+
+7. charCodeAt
+var name = 'setiawan';
+  name.charCodeAt(4);
+  name.charCodeAt(position);
+
+7. Property Access
+var name = 'setiawan';
+  name.[1];
+  name.[position];
+
+7. String to array
+var name = 'setiawan, eko, john';
+  name.split(string);
+  name.split(', ');
+  var name = 'setiawan eko john';
+  name.split(' ');
+
+7. string to object
+var name = 'setiawan';
+var newName = new String(name);
+
+
+
+Sabtu
+--
+JS Number
+JS Number Method
+JS Array
+JS Array Method
+JS Array Sort
+JS Array Iteration
+
+Minggu
+--
+
+JS Date
+JS Date Formats
+JS Date Get Method
+JS Date Set Method
+
+
+function setList(data){
+  var contentList = '';
+  data.forEach(function(val, idx){
+    contentList += '<li>' +val+ '</li>'
+  });
+  document.getElementById('feeds').innerHTML = contentList;
+}
+
+document.getElementById('kerword').oninput = function(even){
+  var value = this.value;
+  
+}

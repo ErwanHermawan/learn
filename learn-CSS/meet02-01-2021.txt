@@ -1,0 +1,92 @@
+CSS Atribute Selector
+--
+
+[attribute] -> sesuai attr
+[attribute="value"] -> sama dengan
+[attribute~="value"] -> mengandung value diawal / diakhir(single class)
+[attribute|="value"] -> diawali dengan value / tandan penghubung(-)
+[attribute^="value"] -> mengandung value diawal
+[attribute$="value"] -> mengandung value diakhir
+[attribute*="value"] -> semua yang mengandung value
+
+selector[attribute]:pseudo-class
+selector[attribute]:pseudo-elament
+
+/*Convert Font*/Icomon
+
+
+CSS Gradient (CSS3)
+--
+
+.selector-class{
+  background-image: linear-gradient(color1, 2, 3);
+  background-image: -webkit-linear-gradient(color1, 2, 3);
+
+  /*
+  direction horizontal: to right | to left;
+  direction vertical: to top | to botton;
+  direction diagonal: gabungan;
+  angle: 0 - 360;
+   */
+  background-image: linear-gradient(direction | angle, c1, c2,...);
+  background-image: linear-gradient(direction | angle, c1 0-100%, c2 0-100%);
+  background-image: repeating-linear-gradient(direction | angle, c1 0-100%, c2 0-100%);
+
+  /*
+  shape: circle, ellips(default);
+  size: closets-size | ;
+  position: x, y;
+   */
+  background-image:  radial-gradient(shape size at position, c1, c2,...);
+  background-image:  repeating-radial-gradient(shape size at position, c1, c2,...);
+}
+
+
+CSS Animation (CSS3)
+--
+
+.selector-class{
+  animation-name: free-text;
+  animation-duration: time (s|ms);
+  animation-delay: time(s|ms);
+  animation-iteration-count: number | infinite;
+  animation-direction: normal | reverse | alternate | alternate-reverse;
+  animation-timing-function: ease | ease-in | ease-out | ease-in-out;
+  animation-fill-mode: none | forwards | backwards | both;
+  animation-play-state: running | paused;
+
+  /*shorthand*/
+  animation: name duration timing-function delay iteration-count direction fill-mode animation-play-state
+}
+
+
+@keyframes free-text{
+  from{
+    background-color: red;
+  }
+  to{
+    background-color: blue;
+  }
+
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: blue;
+  }
+}
+
+
+CSS Media Query
+--
+
+@media not | only mediatype and (expressions){
+  css-code;
+}
+
+mediatype
+- all
+- print
+- screen
+- spech
+

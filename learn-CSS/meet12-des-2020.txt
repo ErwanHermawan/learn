@@ -1,0 +1,17 @@
+CSS Float
+--
+
+selector{
+  float: left | right | none;
+}
+
+selector::after{
+  content: '';
+  display: table;
+  clear: none | left | right | both;
+}
+
+autofilename
+
+
+

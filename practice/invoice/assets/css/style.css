@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  color: #666;
+}
+
+p{
+  font-size: 9px;
+  margin: 0;
+}
+@media print {
+  .page-break { display: block; page-break-before: always; }
+}
+
+.invoice-pos{
+  padding: 2mm;
+  width: 44mm;
+  background: #FFF;
+}
+
+.company-name{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 4px;
+}
+
+.company-name h1{
+  margin: 0;
+  font-size: 24px;
+}
+
+.info-client{
+  margin-bottom: 4px;
+}
+
+.info-client p {
+  margin: 0;
+  font-size: 9px;
+}
+
+.invoice-pos .info {
+  margin-left: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.table th{
+  background: #eee;
+  text-align: left;
+  font-size: 9px;
+  line-height: 10px;
+  padding: 4px 0;
+}
+
+.table-fill{
+  border-bottom: 1px solid #eee;
+}
+
+.table-fill .item{
+  width: 50%;
+}
+
+.table-fill .qty{
+  width: 20%;
+}
+
+.table-fill .price{
+  width: 30%;
+}
+
+.table tfoot{
+  background: #eee;
+  margin: 0;
+}
+
+.table p{
+  margin: 0;
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+.invoice-pos .service {
+  border-bottom: 1px solid #eee;
+}
+
+.footer p{
+  text-align: center;
+  margin-top: 4px;
+}

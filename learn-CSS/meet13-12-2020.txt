@@ -1,0 +1,54 @@
+CSS Counter
+--
+
+selector-parent{
+  counter-reset: freetext;overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+selector::before{
+  counter-increment: freetext;
+  content: counter(freetext, list-style);
+}
+
+CSS Combinator
+--
+
+- descendant selector (space)
+
+- child selector (>) 
+  Selektor saudara yang berdekatan digunakan untuk memilih
+  elemen yang berada tepat setelah elemen tertentu lainnya.
+  Elemen saudara harus memiliki elemen induk yang sama, dan
+  "berdekatan" berarti "langsung mengikuti".
+
+- adjacent sibling selector (+)
+  Selektor saudara yang berdekatan digunakan untuk memilih 
+  elemen yang berada tepat setelah elemen tertentu lainnya.
+  Elemen saudara harus memiliki elemen induk yang sama, dan 
+  "berdekatan" berarti "langsung mengikuti".
+
+- general sibling selector (~)
+  Pemilih saudara umum memilih semua elemen yang merupakan 
+  saudara dari elemen yang ditentukan.
+
+CSS Cursor
+--
+ selector{
+  cursor: default | pointer | auto | text | url();
+ }
+
+CSS Transition
+--
+
+selector{
+  transition-property: all | part-of-property;
+  transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | cubic-brazier(x1, y1, x2, y2);
+  transition-duration: timing;
+  transition-delay: timing;
+}
+
+mematikan semua transisi sebelum di load
+hold-transition{
+  transition: none !important;
+}

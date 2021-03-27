@@ -1,0 +1,42 @@
+Javascript Frameworks
+--
+
+JQuery
+- HTML/DOM manipulation
+- CSS Manipulation
+- 
+
+JQuery Selector
+--
+
+JQuery Evens
+--
+
+Mouse Events
+- click
+  selector.click(function() {
+    console.log(1);
+  });
+
+  selector.on('click', function() {
+    console.log(1);
+  });
+- dbclick
+- mouseenter
+- mouseleave
+
+Keyboard Events
+- keypress
+- keydown
+- keyup
+Form Events
+- submit
+- change
+- focus
+- blur
+
+Document/Windows Events
+- load
+- resize
+- scroll
+- unload

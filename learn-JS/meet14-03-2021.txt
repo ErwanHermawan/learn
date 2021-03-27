@@ -1,0 +1,122 @@
+Javascript Arrow function
+--
+
+ES5
+function functionName(){
+
+}
+or
+var functionName = function(){
+
+}
+
+ES6
+functionName () => {
+
+}
+var functionName = (param1, param2) => {
+
+}
+
+//this: variable object -> mengacu pada windows (ES6)
+
+JSON
+--
+
+JSON -> format data
+
+//jsonlint.com
+
+var data = {
+  "id": 1,
+  "nama": "Rini",
+  "nilai": 90
+}
+
+//JSON Text
+var data = '{"id": 1,"nama": "Rini","nilai": 90}';
+
+//convert JSON text ke JSON Format
+data = JSON.parse(data);
+//convert JSON Format ke JSON Text
+data = JSON.stringify(data);
+
+
+
+Javascript Class
+--
+
+this: class -> mengacu kepada className
+
+//nama class menggunakan pascal case
+class className{
+  constructor(){
+
+  }
+}
+
+class Person{
+  constructor(firstname, lastname){
+    console.log(firstname + ' ' + lastname);
+  }
+}
+
+new Person('John');
+
+class HandlePopup{
+  constructor(firstname, lastname){
+    //console.log(firstname + ' ' + lastname);
+
+    this.firstname = firstname;
+    this.lastname = lastname;
+  }
+
+  fullName(status) {
+    console.log(this.firstname);
+    console.log(this.lastname);
+
+    return this.firstname + ' ' + this.lastname;
+  }
+
+  close() {
+    console.log('close');
+  }
+
+  init(status){
+    this.open(status);
+    this.close(status);
+  }
+}
+
+var HP = new HandlePopup('John','Doe');
+console.log(HP.fullName());
+
+
+
+Javascript Math Method
+--
+
+Math.PI;
+Math.round(n); //Pembulatan
+Math.pow(nx, ny); //Perpangkatan
+Math.sqrt(n); //Akar pangkat 2
+Math.abs(n); //Mengembalikan nilai n dg nilai positif
+Math.ceil(n); //Pembulatan ke atas
+Math.floor(n); //Pembulatan ke bawah
+Math.min(n,n,n,n,n); //Mencari nilai terkecil
+Math.max(n,n,n,n,n); //Mencari nilai terkecil
+Math.sin();
+Math.cos();
+Math.tan();
+
+
+Javascript Random
+--
+
+Math.random(); // 0 -1
+math.round(Math.random() * 100); //1 - 9
+math.round(Math.random() * 1000); //1 - 999
+math.round(Math.random() * 10000); //1 - 9999
+
+
+Javascript Reversed Mode

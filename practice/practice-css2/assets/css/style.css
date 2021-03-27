@@ -1,0 +1,41 @@
+img{
+	max-width: 100%;
+}
+
+.wrapper{
+	width: 1140px;
+	margin: 40px auto;
+}
+
+.box{
+	background-color: #eee;
+	margin-bottom: 40px;
+}
+
+.box-body{
+	padding: 32px;
+}
+
+.box-title{
+	margin: 0;
+	margin-bottom: 16px;
+	color: #fff
+}
+
+.box-description{
+	margin: 0;
+	color: #fff;
+	line-height: 20px;
+}
+
+.black{
+	background-color: #222222;
+}
+
+.red{
+	background-color: #C23636;
+}
+
+.blue{
+	background-color:#5963C0;
+}

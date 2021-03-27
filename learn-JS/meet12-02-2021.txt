@@ -1,0 +1,59 @@
+function function_name(param,value) {
+  document.getElementById('param').innerText = value;
+}
+
+function_name();
+
+var product = {
+  add : function(){},
+  edit : function(){},
+  delete : function(){},
+  view : function(){},
+}
+
+product.add();
+product.edit();
+product.delete();
+product.view();
+
+
+JS Object
+--
+
+var person ={
+  lastName = 'John';
+  lastName = 'Doe';
+  age = 20;
+}
+
+// accesing object
+objectName.lastName;
+// or
+objectName['lastName'];
+
+//additional object
+
+var person ={
+  lastName = 'John';
+  lastName = 'Doe';
+  fullName: function(){
+
+  }
+}
+
+
+JS Event
+--
+
+onchange ->  An HTML element has been changed
+onclick -> The user clicks an HTML element
+onmouseover -> The user moves the mouse over an HTML element
+onmouseout -> The user moves the mouse away from an HTML element
+oninput -> 
+onkeyup -> 
+onkeydown -> The user pushes a keyboard key
+onload -> The browser has finished loading the page
+onfocus
+onblur
+
+
