@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding-top: 60px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.button {
+	margin-bottom: 16px;
+}	
+
+.btn {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	padding: 12px 32px;
+	background-color: green;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.image {
+	height: 480px;
+	width: auto;
+}
+
+.image img {
+	height: 100%;
+	display: block;
+}
