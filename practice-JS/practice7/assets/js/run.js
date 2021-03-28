@@ -1,3 +1,9 @@
 $('.js-effect').on('click', function() {
-	$('.image').toggle(1000);
+	if ($('.image:visible').length) {
+		$('.image').hide(500);
+		$(this).text('Show');
+	} else {
+		$('.image').show(500);
+		$(this).text('Hide');
+	}
 });
