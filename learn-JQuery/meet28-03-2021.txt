@@ -1,0 +1,103 @@
+JQuery Stop
+--
+
+selector.stop();
+
+CALL BACK
+  fungsi yang dijalankan setelah fungsi utama selesai di proses
+
+CHAINING
+--
+selector.method1().method2();
+
+-- before chaining
+$('popup').slideDown(1000);
+$('popup').slideUp(1000);
+
+-- chaining
+$('popup').slideDown(1000).slideUp(1000);
+
+
+
+JQuery HTML
+--
+-- JQuery Getter
+
+Text
+--
+selector.text();
+
+HTML Tag
+--
+selector.html();
+
+value input
+--
+selector.val();
+
+value attribute
+--
+selector.attr();
+
+--JQuery Setter
+
+set content including HTML
+selector.html()
+
+set content text
+selector.text()
+
+set value input
+selector.val()
+
+set value attribute
+
+selector.attr(attrName, value)
+
+$('img').attr({
+  'src': 'file-path',
+  'alt': 'alt'
+})
+
+
+--JQuery Append
+// menysipkan content di bagian ahir sebelum tag tutup selector
+selector.append(tagHTML);
+selector.append(plain text);
+
+--JQuery prepend
+// menysipkan content di bagian awal sebelum tag tutup selector
+selector.prepend(tagHTML);
+selector.prepend(plain text);
+
+--JQuery before
+selector.before(tagHTML);
+selector.before(plain text);
+
+--Jquery After
+selector.after(tagHTML);
+selector.after(plain text);
+
+
+JQuery Remove Element
+
+// menghapus selector termasuk dirinya sendiri
+- selector.remove();
+
+//menghapu semua elemnt yang ada di dalam attribute
+- selector.empty();
+
+// menghapus attribute
+- selector.removeAttr();
+
+
+//delegate Event
+$('body').on('click', 'js-remove-menu', function(e) {
+  $(this).parent().remove();
+});
+
+$('body').on('click', function(e) {
+
+}).on('click', 'js-remove-menu', function(e) {
+  $(this).parent().remove();
+});
