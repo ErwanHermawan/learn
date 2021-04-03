@@ -21,11 +21,18 @@ body{
   padding-top: 60px;
 }
 
+.slide .container {
+  position: relative;
+}
+
+.slide__wrapper {
+  overflow: hidden;
+  font-size: 0;
+}
+
 .slide__box {
   white-space: nowrap;
-  overflow: hidden;
   position: relative;
-  font-size: 0;
 }
 
 .slide__item {
@@ -72,14 +79,10 @@ body{
   color: #fff;
 }
 
-.slide__button {
+.btn {
   position: absolute;
   z-index: 4;
-  left: 0;
-  top: 40%;
-}
-
-.button {
+  top: 45%;
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -93,4 +96,12 @@ body{
   color: #fff;
   cursor: pointer;
   z-index: 9;
+}
+
+.btn-left {
+  left: -20px;
+}
+
+.btn-right{
+  right: -20px;
 }
