@@ -93,9 +93,8 @@ body {
   font-size: 14px;
 }
 
-
 /*popup*/
-.popup-team {
+.popup {
   display: none;
   position: fixed;
   z-index: 3;
@@ -108,40 +107,46 @@ body {
   overflow-y: auto;
   background: rgba(42, 42, 42, 0.3);
 }
-.popup-container {
+.popup__wrapper {
   width: 100%;
   height: 100%;
   display: table; 
 }
-.popup-box {
+.popup__box {
   display: table-cell;
   vertical-align: middle; 
   padding: 16px 80px;
   text-align: center;
 }
-.popup-body {
+.popup__body {
   position: relative;
   display: inline-block;
   text-align: left;
   border-radius: 8px;
-  width: 600px;
-  padding: 50px;
+  width: 500px;
+  padding: 48px 32px;
   background-color: #fff;
 }
-.popup-img {
+.popup__img {
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
-.popup-name {
+.popup__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popup__txt__name {
   color: #B96D80;
   font-size: 24px;
   margin: 16px 0 8px;
 }
-.popup-position {
+.popup__txt__position {
   font-size: 14px;
   margin: 0 0 16px;
 }
-.popup-sosmed {
+.popup__txt__sosmed {
   margin: 0 0 16px;
   padding: 0;
   list-style: none;
@@ -168,19 +173,20 @@ a .fa-twitter {
 a .fa-instagram {
   color: pink;
 }
-.popup-desc {
+.popup__txt__desc {
   font-size: 16px;
   line-height: 1.3;
   margin: 0;
 }
-.popup-close {
+.popup__close {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 32px;
   background-color: transparent;
   color: red;
   outline: 0;
   border: 0;
-  font-size: 32px;
+  font-size: 24px;
   cursor: pointer;
+  padding: 0;
 }
