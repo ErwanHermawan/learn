@@ -1,0 +1,30 @@
+Loop JQuery 
+
+// element html (class, element, attr)
+selector.each(function(index, el) {
+  
+});
+
+// Array data
+$.each(arrayData, function(index, value) {
+  
+});
+
+
+
+JQuery Traversing - Anchestors
+--
+
+selector.parent(); // parent satu tingkat di atasnya
+selector.parent(selectorParent);
+selector.parents(); // all parent diata selector
+selector.parents(selectorParent);
+selector.parentsUntil(selectorParent); // menyeleksi element diantara selector dan selectorParent
+
+JQuery Traversing - Descendants
+--
+
+selector.children(); //element satu tingkat dibawah selector
+selector.children('selector');
+selector.find('selector');
+

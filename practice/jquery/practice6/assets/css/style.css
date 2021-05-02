@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  color: #2a2a2a;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.tab__nav{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  border-bottom: solid 1px #eee;
+}
+.tab__nav_link {
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 12px 24px;
+  cursor: pointer;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.tab__nav_link:hover {
+  color: #28a745;
+}
+
+.tab__nav_link::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  display: block;
+  border-bottom: solid 3px #28a745;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+
+.tab__nav_link.active {
+  color: #28a745;
+}
+
+.tab__nav_link.active::after {
+  transform: scaleX(1);
+}
+
+.tab__content {
+  display: none;
+}
+
+.tab__content.active {
+  display: block;
+}
+
+.accordion__list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  border-bottom: solid 1px #eee;
+  padding: 16px 8px;
+}
+
+.accordion__item:last-child {
+  margin: 0;
+}
+
+.accordion__item::after {
+  content: "\f078";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  color: #28a745;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: normal;
+  transition: all .3s ease;
+}
+
+.accordion__item.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion__item__title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.accordion__item__body {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.accordion__item__desc{
+  position: relative;
+  display: block;
+  padding: 16px 32px 0 0;
+}
+
+.accordion__item__desc p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__item.active .accordion__item__title{
+  color: #28a745; 
+}

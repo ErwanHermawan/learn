@@ -1,0 +1,26 @@
+[
+  {
+    "photo": "1.png",
+    "name": "Nikmah Tiana",
+    "position": "UI Developer",
+    "description": "Nikmah Tiana Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque officia quos aperiam modi commodi nisi fuga, sunt dolorem."
+  },
+  {
+    "photo": "2.png",
+    "name": "Tiara Fauziah",
+    "position": "UX Developer",
+    "description": "Tiara Fauziah Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque officia quos aperiam modi commodi nisi fuga, sunt dolorem."
+  },
+  {
+    "photo": "3.png",
+    "name": "Ferina",
+    "position": "Front End Developer",
+    "description": "Ferina Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque officia quos aperiam modi commodi nisi fuga, sunt dolorem."
+  },
+  {
+    "photo": "hijab.png",
+    "name": "Camelia",
+    "position": "UI Developer",
+    "description": "Camelia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque officia quos aperiam modi commodi nisi fuga, sunt dolorem."
+  }
+]

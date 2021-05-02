@@ -1,0 +1,48 @@
+AJAX - Asynchronus Javascript and XML
+
+JQuery - AJAX load() Method (HTML Tag / Plain Text)
+--
+
+//Running on Web Server
+$(selector).load(URL|File, data, function(responseTxt, statusTxt, xhr) {
+
+});
+
+URL/File : 
+data : 
+xhr : 
+
+JQuery - AJAX get() and post()
+
+get() mengambil data dari BE ke FE
+
+get(URL, callback);
+
+get(URL, function(response, status) {
+
+});
+
+
+post()
+
+
+JQuery - the noConflict() Method
+--
+
+
+
+data tooltip
+
+data-placement
+data-title
+
+// before
+$('.js-card');
+
+//after
+$.noConflict();
+
+JQuery('.js-card');
+
+JQuery Filter
+--

@@ -88,6 +88,12 @@ var Main = {
         $('.js-popup-modal').fadeOut(300);
       }
     });
+
+    $(document).on('keyup', function(e) {
+      if (e.which === 27) {
+         $('.js-popup-modal').fadeOut(300);
+      }
+    });
   },
 
   init: function() {

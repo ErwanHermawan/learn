@@ -1,0 +1,23 @@
+JQuery Traversing - Siblings
+--
+
+selector.siblings(); //semua  element sebelum dan sesudah selector
+selector.siblings('selector'); // sesuai selector yang di pilih
+selector.next(); // 1 element setelah element selector
+selector.next(selector); // 1 element setelah element selector
+selector.nextAll(selector); // semua setelah element selector
+selector.nextUntil(selector); // menyeleksi element
+selector.prev(); //1 element sebelum selector
+selector.prevAll(selector);
+selector.prevUntil(selector);
+
+
+JQuery Traversing - Filtering 
+--
+
+selector.first(); // element index 0 sesuai selector
+selector.last(); // element index terakhir sesuai selector
+selector.eq(index); // element sesuai index dari seluruh elemet windows
+selector.index(selector/element); // get number dari seluruh element windows
+selector.filter(); // element sesuai selectorFilter
+selector.not('selector');

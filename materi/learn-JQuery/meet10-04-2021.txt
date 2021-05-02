@@ -1,0 +1,48 @@
+JQuery - CSS Classes
+--
+
+//Menambah class
+selector.addClass('className');
+selector.addClass('className1', 'className2', 'className2');
+
+//Menghapus class
+selector.removeClass('className')
+
+//
+selector.toogleClass('className')
+
+// mengecek yang memiliki value class atau tidak
+selector.hasClass('className')
+
+
+
+JQuery - CSS() Method
+--
+
+selector.style.propertyName = value;
+
+//get value prop name
+selector.css('propertyName');
+
+//set single property
+selector.css('propertyName', 'value');
+
+//set multiple
+selector.css({
+  'property1': 'value',
+  'property2': 'value',
+  'property3': 'value',
+  'property4': 'value'
+});
+
+
+JQuery - Dimention
+--
+
+selector.width();
+selector.height();
+selector.innerWidth(); //content + padding
+selector.innerHeight(); //content + padding
+selector.outerWidth(); //content + padding + border
+selector.outerHeight(); //content + padding + border
+selector.outerHeight(true); //content + padding + border + margin
