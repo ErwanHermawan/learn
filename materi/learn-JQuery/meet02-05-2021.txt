@@ -1,0 +1,8 @@
+[attribute] {
+  proterty: value;
+}
+ 
+::after,
+::before {
+  content: attr(atttibute-name);
+}

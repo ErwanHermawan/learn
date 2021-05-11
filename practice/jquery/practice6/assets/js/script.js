@@ -1,23 +1,26 @@
 var Main = {
   jsTabbing: function() {
     $('.js-tab .tab__nav_link').on('click', function(){
-      var tab_id = $(this).attr('data-tab');
-      $(this).siblings('li').removeClass('active');
-      $(this).parents('.js-tab').find('.tab__content').removeClass('active');
+      if (!$(this).hasClass('active')) {
+        var target = $(this).attr('data-tab');
+        $(this).siblings('li').removeClass('active');
+        $(this).parents('.js-tab').find('.tab__content').removeClass('active');
 
-      $(this).addClass('active');
-      $('#'+tab_id).addClass('active');
+        $(this).addClass('active');
+        $(target).addClass('active');
+      }
     })
   },
 
   jsAccordion: function() {
-    $('body').on('click', '.js-accordion .accordion__item__title', function() {
-
-      if ($(this).parents('.accordion__item').hasClass('active')) {
-        $(this).parents('.accordion__item').removeClass('active').find('.accordion__item__body').slideUp();
+    $('.js-accordion .accordion__item__title').on('click', function() {
+      var _parent = $(this).parents('.accordion__item');
+      
+      if (_parent.hasClass('active')) {
+        _parent.removeClass('active').find('.accordion__item__body').slideUp();
       } else {
-        $('.accordion__item').removeClass('active').find('.accordion__item__body').slideUp();
-        $(this).parents('.accordion__item').addClass('active').find('.accordion__item__body').slideDown();
+        $(this).parents('.js-accordion').find('.accordion__item').removeClass('active').find('.accordion__item__body').slideUp();
+        _parent.addClass('active').find('.accordion__item__body').slideDown();
       }
         
     });

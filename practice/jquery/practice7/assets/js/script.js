@@ -22,7 +22,13 @@ var Toast = {
 var Search = {
   handleSetData: function() {
     $.each(dataSearch, function(i, v) {
-      $('.search-result-list').append('<li><a href="#">' + v +'</a></li>');
+      $('.js-result-list').append('<li><a href="#">' + v +'</a></li>');
+    });
+  },
+
+  handleFocus: function() {
+    $('.js-search-data').on('focus', function() {
+      $(this).parents('.search').find('.search-result').addClass('show');
     });
   },
 
@@ -76,6 +82,7 @@ var Search = {
 
   init: function() {
     Search.handleSetData();
+    Search.handleFocus();
     Search.handleClick();
     Search.handleKeyup();
     Search.handleInput();
