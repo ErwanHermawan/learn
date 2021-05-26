@@ -32,7 +32,7 @@ var Search = {
     });
   },
 
-  handleClick: function() {
+  handleClick: function() { 
     $('body').on('click', function() {
       $('.search-result').hide();
     });

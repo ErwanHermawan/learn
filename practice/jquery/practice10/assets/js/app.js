@@ -1,8 +1,6 @@
 var MobileMenu = {
   handleLoad: function() {
-    $('body').on('load', function() {
-      $(this).removeClass('hold-transtion');
-    });
+    $('body').removeClass('hold-transition');
   },
 
   handleClick: function() {
