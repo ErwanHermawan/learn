@@ -1,0 +1,14 @@
+//- Create mixin in PUG
+
+//- mixin
+mixin ds__item (param1, param2)
+  ds__item
+    h3.ds__title
+      | !{title}
+    ds__body
+      block
+  ='\n'
+
+// call
++ds__item('param1', 'param2')
+

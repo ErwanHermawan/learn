@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Elements: Button
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 160px;
+  padding: 14px 40px;
+  border-radius: 55px;
+  text-decoration: none;
+  border: solid 1px transparent;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  @include font-size(18);
+  font-weight: fw(bold);
+  background-color: transparent;
+  color: color(white);
+  user-select: none;
+  transition: all 350ms ease;
+  @include small {
+    padding: 12px 40px;
+  }
+  &--primary {
+    background-image: linear-gradient(
+      to right,
+      color(blue, 1) 60%,
+      color(blue, 2)
+    );
+    background-size: 202% 1px;
+    background-position: left center;
+    &:hover {
+      background-position: right center;
+    }
+  }
+  &--secondary {
+    border: solid 1px color(blue, 1);
+    color: color(blue, 1);
+    &:hover {
+      color: color(white);
+      background-color: color(blue, 1);
+    }
+  }
+  .icon-arrow-down {
+    @include font-size(12);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}

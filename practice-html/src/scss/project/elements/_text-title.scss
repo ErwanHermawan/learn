@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Elements: Text Title
+   ========================================================================== */
+
+.text {
+  &-title {
+    @include font-size(36);
+    font-weight: fw(bold);
+    color: color(black, 1);
+    text-align: center;
+    margin-bottom: 40px;
+    @include medium {
+      @include font-size(24);
+      margin-bottom: 32px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 2px;
+      margin: 32px auto 0;
+      background-color: color(black, 1);
+      @include medium {
+        margin: 24px auto 0;
+      }
+    }
+    &--white {
+      color: color(white);
+      &::after {
+        background-color: color(white);
+      }
+    }
+  }
+  &--left {
+    text-align: left;
+    &::after {
+      margin-left: 0;
+      margin-right: 0;
+      @include medium {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

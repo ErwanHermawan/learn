@@ -1,0 +1,191 @@
+/* ==========================================================================
+Layout: Footer
+========================================================================== */
+
+.footer {
+  $f: &;
+  background-image: linear-gradient(
+    to bottom,
+    color(blue, 2) 0%,
+    color(blue, 2) 1%,
+    color(blue, 3) 100%
+  );
+  color: color(white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  padding: 96px 0 104px;
+  z-index: zi(footer);
+  @include medium {
+    padding: 64px 0 72px;
+  }
+  @include small {
+    padding: 48px 0 56px;
+    position: relative;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 115px;
+    left: -20px;
+    bottom: -48px;
+    background: url(../img/bg/element2.svg) no-repeat center/100%;
+    @include small {
+      width: 100px;
+      height: 88px;
+      bottom: -24px;
+      left: -10px;
+    }
+  }
+  &__content {
+    @include clearfix;
+  }
+  &__menu {
+    float: right;
+    @include medium {
+      float: none;
+      width: 100%;
+      padding-bottom: 40px;
+    }
+  }
+  &__list {
+    @include clearfix;
+    &__item {
+      float: left;
+      margin-right: 144px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include large {
+        margin-right: 80px;
+      }
+      @include medium {
+        margin-right: 120px;
+      }
+      @include small {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 16px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      &--show {
+        #{$f}__title {
+          &::after {
+            transform: rotateX(180deg);
+            transition: all 0.5s ease 0.5s;
+          }
+        }
+        #{$f}__nav__item {
+          opacity: 1;
+          transition: all 0.5s ease 0.5s;
+          transform: none;
+        }
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    position: relative;
+    @include medium {
+      margin-bottom: 16px;
+    }
+    @include small {
+      @include font-size(18);
+      margin-bottom: 16px;
+    }
+    @include x-small {
+      &::after {
+        content: "\e907";
+        font-family: ff(family-icon);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.5s ease 0.3s;
+      }
+    }
+  }
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include small {
+      display: none;
+      padding-bottom: 8px;
+    }
+    &__item {
+      display: block;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include small {
+        opacity: 0;
+        transform: translateX(8px);
+        transition: all 0.5s ease 0s;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      @include font-size(18);
+      font-weight: fw(light);
+      position: relative;
+      @include medium {
+        @include font-size(16);
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: color(white);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  &__about {
+    float: left;
+    max-width: 35%;
+    @include medium {
+      float: none;
+      max-width: initial;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 16px;
+    &__el {
+      display: block;
+      height: 100%;
+    }
+  }
+  &__text {
+    font-weight: fw(light);
+  }
+  &__desc {
+    @include font-size(18);
+    margin-bottom: 32px;
+    @include medium {
+      @include font-size(16);
+    }
+  }
+  &__copyright {
+    margin-bottom: 0;
+  }
+}

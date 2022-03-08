@@ -1,0 +1,100 @@
+//-------------------------------------------------------------------------------
+  @name: our services
+  -------------------------------------------------------------------------------//
+
+-
+  data = {
+    logoSrc: 'trafalgar-white.svg',
+    logoLink: 'index.html',
+    logoAlt: 'Trafalgar',
+    desc: 'Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone',
+    copyright: '©Trafalgar PTY LTD 2020. All rights reserved',
+    menu: [
+      {
+        title: 'Company',
+        nav: [
+          {
+            title: 'About',
+            link: 'about.html'
+          },
+          {
+            title: 'Testimonials',
+            link: 'testimonials.html'
+          },
+          {
+            title: 'Find a doctor',
+            link: 'doctor.html'
+          },
+          {
+            title: 'Apps',
+            link: 'apps.html'
+          }
+        ]
+      },
+      {
+        title: 'Region',
+        nav: [
+          {
+            title: 'Indonesia',
+            link: '#'
+          },
+          {
+            title: 'Singapore',
+            link: '#'
+          },
+          {
+            title: 'Hongkong',
+            link: '#'
+          },
+          {
+            title: 'Canada',
+            link: '#'
+          }
+        ]
+      },
+      {
+        title: 'Help',
+        nav: [
+          {
+            title: 'Help center',
+            link: '#'
+          },
+          {
+            title: 'Contact support',
+            link: '#'
+          },
+          {
+            title: 'Intructions',
+            link: '#'
+          },
+          {
+            title: 'How it wors',
+            link: '#'
+          }
+        ]
+      },
+    ]
+  }
+
+// footer
+.footer
+  .container
+    .footer__content
+      .footer__menu
+        .footer__list.js-accordion-footer
+          each val in data.menu
+            .footer__list__item
+              h4.footer__title !{val.title}
+              ul.footer__nav
+                each item in val.nav
+                  li.footer__nav__item
+                    a.footer__nav__link(href=item.link) !{item.title}
+      .footer__about
+        a.footer__logo(href="#")
+          ='\n'
+          img.footer__logo__el(src='assets/img/logo/'+data.logoSrc alt=data.logoAlt)/
+        .footer__text
+          p.footer__desc !{data.desc}
+          p.footer__copyright !{data.copyright}
+='\n'
+// end footer

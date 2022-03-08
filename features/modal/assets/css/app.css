@@ -421,7 +421,7 @@ body{
   overflow: hidden;
   overflow-y: auto;
   background: rgba(42, 42, 42, 0.3);
-  display: block;
+  display: none;
 }
 
 .modal.show {

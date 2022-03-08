@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Components: Burger Menu
+   ========================================================================== */
+
+.burger-menu {
+  $bg: &;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  &__bar,
+  &__bar::before,
+  &__bar::after {
+    height: 3px;
+    display: block;
+    position: absolute;
+    background-color: color(blue, 1);
+    border-radius: 4px;
+  }
+  &__bar {
+    width: 20px;
+    right: 6px;
+    margin-top: -1px;
+    &::before,
+    &::after {
+      content: "";
+      width: 28px;
+      right: 0;
+    }
+    &::before {
+      top: 9px;
+    }
+    &::after {
+      top: -9px;
+    }
+  }
+}

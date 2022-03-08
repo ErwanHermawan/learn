@@ -1,0 +1,61 @@
+ES6
+--
+> browser modern (versi terbaru)
+> browser old (versi lama), need bable (compiler)
+
+1. Variable
+  let (update)
+  const (redonly/tetap)
+
+2. Object (destructuring technique)
+  const post = {
+    title: 'JavaScript Template Literals',
+    excerpt: 'Introduction to JavaScript template literals in ES6',
+    body: 'Content of the post will be here...',
+    tags: {
+      keyword: 'test, lorem, ipsum',
+      description: 'lorem ipsum dolor'
+    }
+  };
+
+  const { title, body, tags: { description } } = post;
+  const _item = '<h1>' + tags[0] + '</h1>';
+  const _item = '<div class="item">' +
+                  '<h1>' + tags[0] + '</h1>' +
+                '</div>'  ;
+
+3. String (expression substitutions: join string with variable)
+  const firstName = 'Rendi';
+  const lastName = 'Rudiawan';
+  const fullName = '<span>Nama Depan: ' + firstName + ', Nama Belakang: '+ Rudiawan +'</span>';
+  const fullName = `<span>Nama Depan: ${firstName}, Nama Belakang: ${Rudiawan}</span>`;
+  const fullName = `<div>
+                      <h1>Nama Depan: ${firstName}, Nama Belakang: ${lastName}</h1>
+                    </div>`;
+
+4. Export/Import file
+  example A:
+  components/Title.js
+  --
+  const Title = 'Indonesia merdeka';
+  export default Title;
+
+  components/home.js
+  --
+  import Title from './Title';
+  console.log(Title);
+
+  example B:
+  components/Title.js
+  --
+  const Title = 'Indonesia merdeka';
+  const Keyword = 'indonesia, merdeka, merah putih';
+  export {
+    Title,
+    Keyword
+  };
+
+  components/home.js
+  --
+  import { Title, Keyword} from './Title';
+  console.log(`${Title} ${Keyword}`);

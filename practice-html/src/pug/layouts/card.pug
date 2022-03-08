@@ -1,0 +1,21 @@
+//-------------------------------------------------------------------------------
+  @name: product
+  -------------------------------------------------------------------------------//
+
+// product
+.product
+
+  .container
+    .product__head
+      h2.product__title !{data.title}
+      .product__form
+        select.product__input(type="text"  name="sorting" placeholder=  value=data.value)
+          option Terbabru
+          option Harga Tertinggi
+          option Harga Terendah
+    .product__body
+      .product__list.js-product-list
+        each val in data.card
+          -
+            data = val
+          include ../components/card-item.pug

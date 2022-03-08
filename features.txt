@@ -6,3 +6,6 @@
 [] Toltips
 [] Modal
 [] Carousel
+
+og fb : 1200x630
+tweet: 800x418
