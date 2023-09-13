@@ -1,0 +1,32 @@
+React JS 1 (03/062023)
+
+--
+
+Objective
+
+  - Memahami pembuatan website dengan ReactJs
+  - Memahami cara membuat compenent state less / state full 
+  - Memahami cara membuat function helper/utils
+  - Memahami cara membuat hooks
+  - Memahami cara membuat routing
+  - Memhahami cara membuat pages
+  - Memahami cara integrasi dengan API
+  - Memahami state management (Redux, React contex, Zustand)
+  - Membuat 1 website/landing page
+
+Key Result
+
+  - Mempelajari ReactJs
+  - Mempelajari cara membuat components
+  - Mempelajari cara membuat helpers/utils
+  - Mempelajari cara membuat routing
+  - Mempelajari cara membuat pages
+  - Mempelajari cara integrasi API
+  - Praktek
+
+React JS 2 (10/062023)
+
+Note JSX vs JS
+
+JS pure syntax javascript
+JSX include return element HTML

@@ -1,0 +1,39 @@
+Getting Started React JS 1
+--
+
+Prerequiste
+---
+  - HTML, CSS, JS
+  - Install node.js (include npm/yarn)
+
+* Step
+---
+- Makesure node JS version
+  $ node -v
+  $ npm -v
+- create-react-app (npm version 5.2+)
+
+Start
+---
+1. Create project
+  $ npx create-react-app react-js
+  $ npm init react-app react-js
+  $ yarn create react-app react-js
+2. Open Project
+  $ cd react-js
+3. Remove default git 
+  $ rm -rf .git
+4. Running
+  $ npm start/npm run start
+
+
+Info 
+--
+  dependencies -> package dibutuhkan untuk menjalankan project
+  devDependencies -> package yang dibutuhkan untuk environment development
+
+
+Membuat component state
+-- 
+
+State Less
